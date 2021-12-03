@@ -53,14 +53,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #c2c8cc;
+      // background: #c2c8cc;
       font-size: .9rem;
       text-decoration: none;
       color: white;
       height: 30px;
       width: 30px;
       border-radius: 50%;
-      margin-right: 10px;
+      margin-right: 3px;
+      img {
+        height: 19px;
+      }
     }
   }
     .location{
@@ -70,6 +73,7 @@
       .address {
         color: #7a8d99;
         margin-bottom: 20px;
+        line-height: 1.6rem;
       }
       .phone-number{
         a{
@@ -82,18 +86,66 @@
     }
 }
   .welcome-jumbo {
+    background: #ed4852; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #ed4852 0%, #9c1b24 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #ed4852 0%,#9c1b24 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #ed4852 0%,#9c1b24 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     display: flex;
     justify-content: center;
     align-items:center;
+    flex-direction: column;
     max-width: 100%;
-    background: #3ea0f7; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #3ea0f7 0%, #0971ce 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, #3ea0f7 0%,#0971ce 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, #3ea0f7 0%,#0971ce 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding: 100px;
+    overflow: hidden;
+  }
+  .status{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: .8rem;
+    font-weight:700;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+  h1{
+    font-size: 4rem;
+    font-weight: 900;
+    align-self: flex-start;
+    color: white;
+    margin-bottom: 100px;
   }
 .burger{
   max-width: 100%;
-  padding-left: 10rem;
-  image-orientation: flip;
+  overflow: hidden;
+  animation: moveUpandDown 4s linear infinite ;
+  position: relative;
 }
+  @keyframes moveUpandDown {
+    0%, 100%{
+      bottom:0; 
+    }
+    50%{
+      bottom:50px;
+    }
+    
   }
+  }
+
+#information{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+  .restaurant-image{
+    img{
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+}
+
+  // background: #3ea0f7; /* Old browsers */
+  //   background: -moz-radial-gradient(center, ellipse cover, #3ea0f7 0%, #0971ce 100%); /* FF3.6-15 */
+  //   background: -webkit-radial-gradient(center, ellipse cover, #3ea0f7 0%,#0971ce 100%); /* Chrome10-25,Safari5.1-6 */
+  //   background: radial-gradient(ellipse at center, #3ea0f7 0%,#0971ce 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
