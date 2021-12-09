@@ -136,14 +136,73 @@ background: radial-gradient(ellipse at center, #ed4852 0%,#9c1b24 100%); /* W3C,
 #information{
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-rows: 100vh;
   overflow: hidden;
-  .restaurant-image{
-    img{
-      width: 100vw;
-      height: 100vh;
-    }
-  }
+  // .restaurant-image{
+    
+  //   img{
+    
+  //   }
+  // }
 }
+.volkan {
+  width: 100%;
+  // max-height: 500px;
+  // object-fit: cover;
+  object-position: 0 -300px ;
+  
+}
+
+ .info {
+   padding: 50px 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   h2 {
+     font-size: 3rem;
+     font-weight: 700;
+     margin-bottom: 20px;
+   }
+   .paragraphs{
+     display: grid;
+     grid-template-columns: 50% 50%;
+     grid-gap: 20px;
+     line-height: 1.7;
+     color: #525e65;
+     font-size: 1.1rem;
+     margin-bottom: 2rem;
+   }
+   .about-link {
+     font-size: 1.8rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     color: black;
+     font-weight: 700;
+     span{
+       margin-right: 20px;
+     }
+   }
+   .circle-right{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     background: #ed4852; /* Old browsers */
+     background: -moz-radial-gradient(center, ellipse cover, #ed4852 0%, #9c1b24 100%); /* FF3.6-15 */
+     background: -webkit-radial-gradient(center, ellipse cover, #ed4852 0%,#9c1b24 100%); /* Chrome10-25,Safari5.1-6 */
+     background: radial-gradient(ellipse at center, #ed4852 0%,#9c1b24 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     .fa-chevron-right{
+       color: white;
+       font-size: 1.3rem;
+     }
+   }
+ }
+
 
   // background: #3ea0f7; /* Old browsers */
   //   background: -moz-radial-gradient(center, ellipse cover, #3ea0f7 0%, #0971ce 100%); /* FF3.6-15 */
